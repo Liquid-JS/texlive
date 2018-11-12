@@ -1,3 +1,3 @@
 FROM ubuntu:bionic
 RUN apt-get update \
-    && apt-get install -y texlive texlive* latexmk
+    && DEBIAN_FRONTEND=noninteractive  apt-get install -yq texlive texlive* latexmk
